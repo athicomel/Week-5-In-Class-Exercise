@@ -18,6 +18,7 @@ namespace OOPCourse {
 }
 
 int main() {
-	OOPCourse::Math::add_and_log(15, 27);
+	OOPCourse::Math::add_and_log;
+	add_and_log(15, 27);
 	return 0;
 }
