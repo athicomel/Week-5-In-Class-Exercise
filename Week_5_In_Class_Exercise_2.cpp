@@ -1,15 +1,18 @@
 #include <iostream>
-#include <cmath>
+
 using namespace std;
 
-namespace OOPCourse {
+namespace {
 	void log_calculation(int result) {
-		cout << " LOG: Calculation performed, result is " << log(result) << endl;
+		cout << " LOG: Calculation performed, result is " << result << endl;
 	};
+}
+namespace OOPCourse {
 
 	namespace Math {
 		int add_and_log(int a, int b) {
-			OOPCourse::log_calculation(a+b);
+			log_calculation(a + b);
+			return a + b;
 		};
 	}
 }
